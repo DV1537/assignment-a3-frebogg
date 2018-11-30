@@ -94,16 +94,10 @@ int main(int argc, const char *argv[])
 
                 delete secondShape;
                 secondShape = nullptr;
+
+                return 0; // Return 0 if combining shapes were successful
             }
-            else
-            {
-                return 1;
-            }
-            return 0;
-        }
-        else
-        {
-            return 1;
         }
     }
+    return 1;
 }
